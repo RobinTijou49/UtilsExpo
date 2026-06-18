@@ -8,8 +8,20 @@
     "scheme": "utils",
     "userInterfaceStyle": "automatic",
     "newArchEnabled": true,
+    "permissions": [
+      "LOCATION",
+      "LOCATION_FOREGROUND",
+      "CAMERA",
+      "CAMERA_ROLL",
+      "NOTIFICATIONS"
+    ],
     "ios": {
-      "supportsTablet": true
+      "supportsTablet": true,
+      "infoPlist": {
+        "NSLocationWhenInUseUsageDescription": "Nous avons besoin de votre position pour tester le GPS",
+        "NSCameraUsageDescription": "Nous avons besoin d'accéder à votre caméra pour prendre des photos",
+        "NSPhotoLibraryUsageDescription": "Nous avons besoin d'accéder à votre galerie photos"
+      }
     },
     "android": {
       "adaptiveIcon": {
@@ -19,7 +31,22 @@
         "monochromeImage": "./assets/images/android-icon-monochrome.png"
       },
       "edgeToEdgeEnabled": true,
-      "predictiveBackGestureEnabled": false
+      "predictiveBackGestureEnabled": false,
+      "permissions": [
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "POST_NOTIFICATIONS",
+        "ACCESS_COARSE_LOCATION",
+        "ACCESS_FINE_LOCATION",
+        "CAMERA",
+        "READ_EXTERNAL_STORAGE",
+        "WRITE_EXTERNAL_STORAGE",
+        "POST_NOTIFICATIONS"
+      ],
+      "package": "com.robin.tju.Utils"
     },
     "web": {
       "output": "static",
